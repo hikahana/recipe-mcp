@@ -160,7 +160,7 @@ paths:
     get:
       tags:
       - FDC
-      summary: Returns a paged list of foods, in the 'abridged' format
+      summary: "Returns a paged list of foods, in the \"abridged\" format"
       description:  Retrieves a paged list of foods. Use the pageNumber parameter to page through the entire result set.
       operationId: getFoodsList
       parameters:
@@ -228,7 +228,7 @@ paths:
     post:
       tags:
       - FDC
-      summary: Returns a paged list of foods, in the 'abridged' format
+      summary: "Returns a paged list of foods, in the \"abridged\" format"
       description:  Retrieves a paged list of foods. Use the pageNumber parameter to page through the entire result set.
       operationId: postFoodsList
       requestBody:
