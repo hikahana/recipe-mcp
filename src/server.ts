@@ -75,7 +75,7 @@ server.tool(
 
 server.tool(
   'getFoodsList',
-  'Returns a paged list of foods, in the 'abridged' format',
+  'Returns a paged list of foods, in the "abridged" format',
   {
     queryParams: getFoodsListQueryParams
   },
@@ -84,7 +84,7 @@ server.tool(
 
 server.tool(
   'postFoodsList',
-  'Returns a paged list of foods, in the 'abridged' format',
+  'Returns a paged list of foods, in the "abridged" format',
   {
     bodyParams: postFoodsListBody
   },

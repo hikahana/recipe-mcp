@@ -51,7 +51,7 @@ export const getGetFoodUrl = (fdcId: string,
 
   const stringifiedParams = normalizedParams.toString();
 
-  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc?api_key=undefined/v1/food/${fdcId}?${stringifiedParams}` : `https://api.nal.usda.gov/fdc?api_key=undefined/v1/food/${fdcId}`
+  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc/v1/food/${fdcId}?${stringifiedParams}` : `https://api.nal.usda.gov/fdc/v1/food/${fdcId}`
 }
 
 export const getFood = async (fdcId: string,
@@ -102,7 +102,7 @@ export const getGetFoodsUrl = (params: GetFoodsParams,) => {
 
   const stringifiedParams = normalizedParams.toString();
 
-  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods?${stringifiedParams}` : `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods`
+  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc/v1/foods?${stringifiedParams}` : `https://api.nal.usda.gov/fdc/v1/foods`
 }
 
 export const getFoods = async (params: GetFoodsParams, options?: RequestInit): Promise<getFoodsResponse> => {
@@ -145,7 +145,7 @@ export const getPostFoodsUrl = () => {
 
   
 
-  return `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods`
+  return `https://api.nal.usda.gov/fdc/v1/foods`
 }
 
 export const postFoods = async (foodsCriteria: FoodsCriteria, options?: RequestInit): Promise<postFoodsResponse> => {
@@ -196,7 +196,7 @@ export const getGetFoodsListUrl = (params?: GetFoodsListParams,) => {
 
   const stringifiedParams = normalizedParams.toString();
 
-  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods/list?${stringifiedParams}` : `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods/list`
+  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc/v1/foods/list?${stringifiedParams}` : `https://api.nal.usda.gov/fdc/v1/foods/list`
 }
 
 export const getFoodsList = async (params?: GetFoodsListParams, options?: RequestInit): Promise<getFoodsListResponse> => {
@@ -239,7 +239,7 @@ export const getPostFoodsListUrl = () => {
 
   
 
-  return `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods/list`
+  return `https://api.nal.usda.gov/fdc/v1/foods/list`
 }
 
 export const postFoodsList = async (foodListCriteria: FoodListCriteria, options?: RequestInit): Promise<postFoodsListResponse> => {
@@ -290,7 +290,7 @@ export const getGetFoodsSearchUrl = (params: GetFoodsSearchParams,) => {
 
   const stringifiedParams = normalizedParams.toString();
 
-  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods/search?${stringifiedParams}` : `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods/search`
+  return stringifiedParams.length > 0 ? `https://api.nal.usda.gov/fdc/v1/foods/search?${stringifiedParams}` : `https://api.nal.usda.gov/fdc/v1/foods/search`
 }
 
 export const getFoodsSearch = async (params: GetFoodsSearchParams, options?: RequestInit): Promise<getFoodsSearchResponse> => {
@@ -333,7 +333,7 @@ export const getPostFoodsSearchUrl = () => {
 
   
 
-  return `https://api.nal.usda.gov/fdc?api_key=undefined/v1/foods/search`
+  return `https://api.nal.usda.gov/fdc/v1/foods/search`
 }
 
 export const postFoodsSearch = async (foodSearchCriteria: FoodSearchCriteria, options?: RequestInit): Promise<postFoodsSearchResponse> => {
@@ -372,7 +372,7 @@ export const getGetJsonSpecUrl = () => {
 
   
 
-  return `https://api.nal.usda.gov/fdc?api_key=undefined/v1/json-spec`
+  return `https://api.nal.usda.gov/fdc/v1/json-spec`
 }
 
 export const getJsonSpec = async ( options?: RequestInit): Promise<getJsonSpecResponse> => {
@@ -410,7 +410,7 @@ export const getGetYamlSpecUrl = () => {
 
   
 
-  return `https://api.nal.usda.gov/fdc?api_key=undefined/v1/yaml-spec`
+  return `https://api.nal.usda.gov/fdc/v1/yaml-spec`
 }
 
 export const getYamlSpec = async ( options?: RequestInit): Promise<getYamlSpecResponse> => {

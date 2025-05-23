@@ -101,7 +101,7 @@ export const postFoodsHandler = async (args: postFoodsArgs) => {
 
 /**
  * Retrieves a paged list of foods. Use the pageNumber parameter to page through the entire result set.
- * @summary Returns a paged list of foods, in the 'abridged' format
+ * @summary Returns a paged list of foods, in the "abridged" format
  */
 
 export type getFoodsListArgs = {
@@ -123,7 +123,7 @@ export const getFoodsListHandler = async (args: getFoodsListArgs) => {
 
 /**
  * Retrieves a paged list of foods. Use the pageNumber parameter to page through the entire result set.
- * @summary Returns a paged list of foods, in the 'abridged' format
+ * @summary Returns a paged list of foods, in the "abridged" format
  */
 
 export type postFoodsListArgs = {
