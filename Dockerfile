@@ -17,4 +17,3 @@ EXPOSE 3000
 
 # Start the MCP server
 CMD ["npm", "start"]
-# CMD ["bash"]
