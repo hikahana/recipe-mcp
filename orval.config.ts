@@ -8,7 +8,8 @@ export default defineConfig({
     output: {
       mode: "single",
       client: "mcp",
-      baseUrl: `https://api.nal.usda.gov/fdc?api_key=${process.env.USDA_KEY}`,
+      // baseUrlを/api.nal.usda.gov/fdcに修正し、api_keyはparamsで渡す
+      baseUrl: "https://api.nal.usda.gov/fdc",
       target: "./src/handlers.ts",
       schemas: "./src/http-schemas",
     },
